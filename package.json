@@ -1,0 +1,21 @@
+{
+  "name": "qwop-runner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["game", "qwop", "three.js", "physics"],
+  "author": "",
+  "license": "ISC",
+  "description": "A QWOP-style limb runner game using Three.js and Rapier physics",
+  "dependencies": {
+    "@dimforge/rapier2d-compat": "^0.15.1",
+    "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.6"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QWOP Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+    <div id="ui-overlay">
+      <div id="main-menu" class="ui-panel">
+        <h1>QWOP Track & Field</h1>
+        <p>Control your runner's limbs using Q, W, O, P keys</p>
+        <p>Hurdle the obstacles and run as far as you can!</p>
+        <div class="controls-guide">
+          <div><span class="key">Q</span> - Left Thigh Forward</div>
+          <div><span class="key">W</span> - Right Thigh Forward</div>
+          <div><span class="key">O</span> - Left Calf Extend</div>
+          <div><span class="key">P</span> - Right Calf Extend</div>
+        </div>
+        <button id="start-button">Start Race</button>
+      </div>
+      <div id="game-ui" class="ui-panel hidden">
+        <div id="score-display">Distance: <span id="score">0</span>m</div>
+      </div>
+      <div id="game-over" class="ui-panel hidden">
+        <h2>Race Complete!</h2>
+        <p>You ran <span id="final-score">0</span>m</p>
+        <div id="medal-display"></div>
+        <button id="restart-button">Try Again</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
